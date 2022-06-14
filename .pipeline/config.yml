@@ -38,7 +38,7 @@ Release:
       space: 'dev'
       apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
       appName: 'bookshop'
-      manifest: 'manifest.yml'
+      # manifest: 'manifest.yml'
       credentialsId: 'deploy-to-cf'
-      cloudFoundryDeploy: true
-      tmsUpload: false
+      # cloudFoundryDeploy: true
+      # tmsUpload: false
