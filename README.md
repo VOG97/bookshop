@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to your new PROJECT.
+Welcome to your new Booksho project.
 
 It contains these folders and files, following our recommended project layout:
 
