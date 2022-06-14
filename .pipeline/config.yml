@@ -33,6 +33,8 @@ stages:
 #        credentialId: 'mySystemCredentialsId'
 
 Release:
+  cloudFoundryDeploy: true
+  tmsUpload: false
   cfTargets:
     - org: '22771c79trial'
       space: 'dev'
