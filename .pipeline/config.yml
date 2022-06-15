@@ -32,14 +32,14 @@ stages:
 #      - alias: 'mySystemAlias'
 #        credentialId: 'mySystemCredentialsId'
 
-Release:
-  cloudFoundryDeploy: true
-  tmsUpload: false
-  cfApiEndpoint : 'https://api.cf.us10.hana.ondemand.com'
-  cfOrg: '22771c79trial'
-  cfSpace: 'dev'
-  cfAppName: 'bookshop'
-  cfCredentialsId: 'deploy-to-cf'
+# Release:
+#   cloudFoundryDeploy: true
+#   tmsUpload: false
+#   cfApiEndpoint : 'https://api.cf.us10.hana.ondemand.com'
+#   cfOrg: '22771c79trial'
+#   cfSpace: 'dev'
+#   cfAppName: 'bookshop'
+#   cfCredentialsId: 'deploy-to-cf'
   # cfTargets:
   #   - org: '22771c79trial'
   #     space: 'dev'
