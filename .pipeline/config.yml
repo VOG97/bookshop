@@ -35,12 +35,17 @@ stages:
 Release:
   cloudFoundryDeploy: true
   tmsUpload: false
-  cfTargets:
-    - org: '22771c79trial'
-      space: 'dev'
-      apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
-      appName: 'bookshop'
-      # manifest: 'manifest.yml'
-      credentialsId: 'deploy-to-cf'
-      # cloudFoundryDeploy: true
-      # tmsUpload: false
+  cfApiEndpoint : 'https://api.cf.us10.hana.ondemand.com'
+  cfOrg: '22771c79trial'
+  cfSpace: 'dev'
+  cfAppName: 'bookshop'
+  cfCredentialsId: 'deploy-to-cf'
+  # cfTargets:
+  #   - org: '22771c79trial'
+  #     space: 'dev'
+  #     apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
+  #     appName: 'bookshop'
+  #     # manifest: 'manifest.yml'
+  #     credentialsId: 'deploy-to-cf'
+  #     # cloudFoundryDeploy: true
+  #     # tmsUpload: false
