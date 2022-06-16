@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to your new Bookshop project.
+Welcome to your new Bookshop project!!.
 
 It contains these folders and files, following our recommended project layout:
 
