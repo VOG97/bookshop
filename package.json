@@ -1,54 +1,60 @@
 {
-  "name": "bookshop",
-  "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
-  "license": "UNLICENSED",
-  "private": true,
-  "dependencies": {
-    "@sap/cds": "^5",
-    "express": "^4",
-    "hdb": "^0.18.3"
-  },
-  "devDependencies": {
-    "sqlite3": "^5.0.2"
-  },
-  "scripts": {
-    "start": "cds run"
-  },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "env": {
-      "es2020": true,
-      "node": true,
-      "jest": true,
-      "mocha": true
+    "name": "bookshop",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@graphql-tools/schema": "^8.3.14",
+        "@sap/cds": "^5",
+        "express": "^4",
+        "express-graphql": "^0.12.0",
+        "graphql": "^16.5.0",
+        "hdb": "^0.18.3"
     },
-    "globals": {
-      "SELECT": true,
-      "INSERT": true,
-      "UPDATE": true,
-      "DELETE": true,
-      "CREATE": true,
-      "DROP": true,
-      "CDL": true,
-      "CQL": true,
-      "CXL": true,
-      "cds": true
+    "devDependencies": {
+        "sqlite3": "^5.0.2"
     },
-    "rules": {
-      "no-console": "off",
-      "require-atomic-updates": "off"
+    "scripts": {
+        "start": "cds run"
+    },
+    "eslintConfig": {
+        "extends": "eslint:recommended",
+        "env": {
+            "es2020": true,
+            "node": true,
+            "jest": true,
+            "mocha": true
+        },
+        "globals": {
+            "SELECT": true,
+            "INSERT": true,
+            "UPDATE": true,
+            "DELETE": true,
+            "CREATE": true,
+            "DROP": true,
+            "CDL": true,
+            "CQL": true,
+            "CXL": true,
+            "cds": true
+        },
+        "rules": {
+            "no-console": "off",
+            "require-atomic-updates": "off"
+        }
+    },
+    "cds": {
+        "requires": {
+            "db": {
+                "kind": "sql"
+            }
+        },
+        "hana": {
+            "deploy-format": "hdbtable"
+        }
+    },
+    "features": {
+        "graphql": true
     }
-  },
-  "cds": {
-    "requires": {
-      "db": {
-        "kind": "sql"
-      }
-    },
-    "hana": {
-      "deploy-format": "hdbtable"
-    }
-  }
 }
